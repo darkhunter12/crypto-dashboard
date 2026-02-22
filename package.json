@@ -1,14 +1,13 @@
-{
-  "name": "crypto-dashboard",
-  "private": true,
-  "version": "0.0.0",
-  "type": "module",
+  {
+  "homepage": "https://darkhunter12.github.io/crypto-dashboard",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "lint": "eslint .",
-    "preview": "vite preview"
-  },
+    "preview": "vite preview",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
+  }
+},
   "dependencies": {
     "react": "^19.2.0",
     "react-dom": "^19.2.0"
